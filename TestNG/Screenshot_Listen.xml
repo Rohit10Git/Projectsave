@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="ScreenshotsForFailed_Listen.ITestListenerClass" />
+	</listeners>
+  <test name="Test1">
+    <classes>
+      <class name="ScreenshotsForFailed_Listen.TestClass">
+		  <methods>
+			  <include name="testYoutube"/>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Screenshot_Listen -->
+  <test name="Test2">
+    <classes>
+      <class name="ScreenshotsForFailed_Listen.TestClass">
+		  <methods>
+			  <include name="testFacebook"/>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Screenshot_Listen -->
+  <test name="Test3">
+    <classes>
+      <class name="ScreenshotsForFailed_Listen.TestClass">
+		  <methods>
+			  <include name="testLogin"/>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Screenshot_Listen -->
+</suite> <!-- Suite -->
